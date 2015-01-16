@@ -37,17 +37,16 @@ grunt.initConfig({
 
 ### Options
 
-#### options.separator
+#### options.who
 Type: `String`
-Default value: `',  '`
+Default value: `buddha`
+###指明是佛主还是神兽来保佑我们的代码。
 
-A string value that is used to do something with whatever.
 
-#### options.punctuation
+#### options.commentSymol
 Type: `String`
-Default value: `'.'`
-
-A string value that is used to do something else with whatever else.
+Default value: `//`
+###拼接的注释符号
 
 ### Usage Examples
 
@@ -72,8 +71,8 @@ In this example, custom options are used to do something else with whatever else
 grunt.initConfig({
   buddha_bless_you: {
     options: {
-      separator: ': ',
-      punctuation: ' !!!',
+     'who':'buddha',
+     'commentsSymbol':'//'
     },
     files: {
       'dest/default_options': ['src/testing', 'src/123'],
@@ -86,7 +85,7 @@ grunt.initConfig({
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-_(Nothing yet)_
+2015-01-16&nbsp;&nbsp;&nbsp;&nbsp;v0.0.1&nbsp;&nbsp;&nbsp;&nbsp;init
 
 ## License
 Copyright (c) 2015 nevercannot. Licensed under the MIT license.
